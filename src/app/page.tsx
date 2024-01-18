@@ -26,7 +26,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src='/type_name.png'
+              src='/camp-space/type_name.png'
               alt="type_name"
               width={1449 / 5}
               height={929 / 5}
