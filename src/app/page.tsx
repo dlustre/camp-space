@@ -1,19 +1,23 @@
 import Image from 'next/image'
 
 export default function Home() {
+  function generateImagePath(src: string) {
+    return process.env.NODE_ENV === 'development' ? src : `/camp-space/${src}`;
+  }
+
   const assignments = [
     {
       title: 'Assignment 1',
       description: 'Type \'Dennis\' to play sound files.',
       link: 'https://drive.google.com/drive/u/1/folders/1owCN0yZkYuiKXcibYXAdY1-9pQwkNjy7',
-      image: '/type_name.png',
+      image: generateImagePath('/type_name.png'),
       targetBlank: true,
     },
     {
       title: 'Assignment 2',
       description: 'Coming soon!',
       link: '/hw2',
-      image: '',
+      image: generateImagePath('/hw2.png'),
       targetBlank: false,
     },
   ]
@@ -46,7 +50,7 @@ export default function Home() {
             <div>
               <Image
                 src={assignment.image}
-                alt="type_name"
+                alt={assignment.title}
                 width={1449 / 5}
                 height={929 / 5}
                 style={{

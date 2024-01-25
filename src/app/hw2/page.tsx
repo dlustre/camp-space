@@ -48,7 +48,7 @@ export default function Page() {
   return (
     <div className="flex min-h-screen flex-col items-center gap-40 p-24">
       <div
-        className={`${playing ? "py-11 px-12" : ""} transition-all relative flex place-items-center border-2 border-w shadow-md border-slate-300 bg-opacity-50 rounded-lg py-3 px-4 bg-slate-700 before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:blur-2xl after:content-[''] i before:bg-gradient-to-br i before:from-transparent i before:to-blue-700 i before:opacity-10 i after:from-sky-900 i after:via-[#0141ff] i after:opacity-40 before:lg:h-[360px] z-[-1]`}
+        className={`${playing ? "py-11 px-12" : "py-3 px-4"} transition-all relative flex place-items-center border-2 border-w shadow-md border-slate-300 bg-opacity-50 rounded-lg bg-slate-700 before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:blur-2xl after:content-[''] i before:bg-gradient-to-br i before:from-transparent i before:to-blue-700 i before:opacity-10 i after:from-sky-900 i after:via-[#0141ff] i after:opacity-40 before:lg:h-[360px] z-[-1]`}
       >
         <h1
           className={`font-semibold text-3xl z-10 drop-shadow-lg}`}
