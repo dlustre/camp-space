@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 export default function Home() {
-  function generateImagePath(src: string) {
+  function generatePath(src: string) {
     return process.env.NODE_ENV === 'development' ? src : `/camp-space/${src}`;
   }
 
@@ -10,14 +10,14 @@ export default function Home() {
       title: 'Assignment 1',
       description: 'Type \'Dennis\' to play sound files.',
       link: 'https://drive.google.com/drive/u/1/folders/1owCN0yZkYuiKXcibYXAdY1-9pQwkNjy7',
-      image: generateImagePath('/type_name.png'),
+      image: generatePath('/type_name.png'),
       targetBlank: true,
     },
     {
       title: 'Assignment 2',
       description: 'Coming soon!',
-      link: '/hw2',
-      image: generateImagePath('/hw2.png'),
+      link: generatePath('/hw2'),
+      image: generatePath('/hw2.png'),
       targetBlank: false,
     },
   ]
