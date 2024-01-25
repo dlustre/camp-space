@@ -1,9 +1,6 @@
 import Image from 'next/image'
-
+import { generatePath } from '../utils/generatePath';
 export default function Home() {
-  function generatePath(src: string) {
-    return process.env.NODE_ENV === 'development' ? src : `/camp-space/${src}`;
-  }
 
   const assignments = [
     {

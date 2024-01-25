@@ -1,5 +1,6 @@
 "use client"
 
+import { generatePath } from '@/utils/generatePath';
 import React, { useEffect, useState } from 'react'
 
 export default function Page() {
@@ -21,7 +22,7 @@ export default function Page() {
     }
   }
 
-  useEffect(() => SetAudio(new Audio("/hw2.wav")), []);
+  useEffect(() => SetAudio(new Audio(generatePath("/hw2.wav"))), []);
 
   useEffect(() => {
     if (audio instanceof HTMLAudioElement) {
