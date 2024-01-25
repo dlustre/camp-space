@@ -60,7 +60,7 @@ export default function Page() {
       <div className='flex gap-4 w-auto rounded-lg shadow-[1px_4px_15px_-1px_rgb(0_0_0/0.1)] h-full bg-gray-400 p-8 justify-center bg-opacity-20'>
         <button
           disabled={!playing}
-          className={`${playing ? "hover:bg-indigo-900" : "hover:bg-gray-500"} font-bold border-2 border-w shadow-md border-slate-300 bg-opacity-50 rounded-lg py-3 px-4 transition-all hover:bg-indigo-900`}
+          className={`${playing ? "hover:bg-indigo-900" : "border-slate-600 text-slate-600"} font-bold border-2 border-w shadow-md border-slate-300 bg-opacity-50 rounded-lg py-3 px-4 transition-all`}
           onClick={fadeOut}
         >
           Fade Out
