@@ -12,7 +12,7 @@ export default function Home() {
     },
     {
       title: 'Assignment 2',
-      description: 'Coming soon!',
+      description: 'Play a soundfile on the browser.',
       link: generatePath('/hw2'),
       image: generatePath('/hw2.png'),
       targetBlank: false,
