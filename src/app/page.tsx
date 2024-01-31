@@ -7,7 +7,7 @@ export default function Home() {
       title: 'Assignment 1',
       description: 'Type \'Dennis\' to play sound files.',
       link: 'https://drive.google.com/drive/u/1/folders/1owCN0yZkYuiKXcibYXAdY1-9pQwkNjy7',
-      image: generatePath('/type_name.png'),
+      image: generatePath('/hw1.png'),
       targetBlank: true,
     },
     {
@@ -17,6 +17,13 @@ export default function Home() {
       image: generatePath('/hw2.png'),
       targetBlank: false,
     },
+    {
+      title: 'Assignment 3',
+      description: 'Play a synthesizer with MIDI on the browser.',
+      link: generatePath('/hw3'),
+      image: generatePath('/hw3.png'),
+      targetBlank: false,
+    }
   ]
 
   return (
