@@ -19,7 +19,7 @@ export default function Home() {
     },
     {
       title: 'Assignment 3',
-      description: 'Play a synthesizer with MIDI on the browser.',
+      description: 'Play different waveforms on the browser.',
       link: generatePath('/hw3'),
       image: generatePath('/hw3.png'),
       targetBlank: false,

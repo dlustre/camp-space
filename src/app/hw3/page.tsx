@@ -103,7 +103,7 @@ export default function Page() {
 
     // Add event listeners to all MIDI inputs
     inputs.forEach((input) => {
-      console.log(input);
+      // console.log(input);
       input.addEventListener('midimessage', (message) => {
         if (!(message instanceof MIDIMessageEvent)) return;
 
@@ -115,8 +115,11 @@ export default function Page() {
           velocity: message.data[2],
         };
 
-        if (messageType === messageTypes.noteOn) noteOn(note, velocity);
-        else if (messageType === messageTypes.noteOff) noteOff(note, velocity);
+        if (messageType === messageTypes.noteOn) {
+          noteOn(note, velocity);
+          noteOff(note, velocity);
+        }
+        // else if (messageType === messageTypes.noteOff) noteOff(note, velocity);
       })
     });
   }
@@ -245,12 +248,12 @@ export default function Page() {
             <p className='underline text-xl lg:text-3xl'>{waveform}</p>
             <p>&uarr;</p>
           </button>
-          wave with MIDI on the browser.
+          wave on the browser.
         </p >
       </div>
       <div className={`border-2 w-[80vw] lg:w-full xl:p-16 py-16 bg-zinc-800 rounded-md flex flex-col items-center justify-center gap-4 shadow-[0_20px_50px] ${waveformShadowColors[waveform]}`} >
         <Piano isMobile={isMobile} />
-        <p className="lg:text-xl font-semibold text-center">{`Don't have a MIDI controller? Click on the piano 🎹`}</p>
+        <p className="lg:text-xl font-semibold text-center">{`Click on the piano! 🎹`}</p>
       </div>
     </div >
   )
