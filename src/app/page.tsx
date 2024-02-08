@@ -23,6 +23,13 @@ export default function Home() {
       link: generatePath('/hw3'),
       image: generatePath('/hw3.png'),
       targetBlank: false,
+    },
+    {
+      title: 'Assignment 4',
+      description: 'A sequencer built by using phasor -> subdiv to play notes on a table.',
+      link: 'https://drive.google.com/drive/u/1/folders/1LYN9vCU2TH9s0uTVJXsuvO2IK0KprJfA',
+      image: generatePath('/hw4.png'),
+      targetBlank: false,
     }
   ]
 
