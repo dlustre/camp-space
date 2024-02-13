@@ -34,7 +34,7 @@ export default function Home() {
     {
       title: 'Project Proposal',
       description: 'Proposal for a Tape Saturator VST plugin.',
-      link: '/proposal',
+      link: generatePath('/proposal'),
       image: generatePath('/proposal.png'),
       targetBlank: false,
     }
