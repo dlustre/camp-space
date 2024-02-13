@@ -1,0 +1,46 @@
+# CAMP Project Proposal
+
+## Team Members
+- Dennis Lustre
+- Keisun Luc
+- Ziyang Cheng
+
+## Programming Platform
+- Max -> VST. Also open to [Rust](https://www.rust-lang.org/) + [nih_plug](https://github.com/robbert-vdh/nih-plug) if it proves to be a better option.
+
+## Product Goal/Purpose
+A Tape Saturator VST that emulates the magnetic hysteresis of a tape machine. The effect will be applied to the signal, and the user will be able to control the amount of saturation, the dry/wet mix, and the input and output volume.
+
+## Anticipated Result
+A VST that applies a tape saturation effect to the signal, with a user interface that allows the user to control the parameters of the effect.
+
+## User Interaction
+Users can turn various knobs to control Dry/Wet, input & output volume, and saturation amount.
+
+## Timeline
+1. Successfully get a basic VST exported which successfully integrates with a DAW (export from Max or Rust + nih_plug, then try importing VST to FL Studio or other DAW).
+2. Conceptualize & finalize audio processing logic (signal -> Discretized Jiles-Atherton Model -> output signal).
+3. Implement minimum-viable-product VST (barebones UI, just basic functionality like sliders to change the parameters).
+4. Conceptualize & implement a better UI.
+5. Prepare a presentation and present the current product (Tuesday, March 12 at 2:00 pm).
+6. Fix remaining issues and add finishing touches.
+7. Write documentation/user manual and turn in our deliverables (Thursday, March 21 at 3:30 pm).
+
+## Knowledge to Acquire
+- How to emulate Magnetic Hysteresis (discretized [Jiles-Atherton Model](https://en.wikipedia.org/wiki/Jiles%E2%80%93Atherton_model), [An Improved Jiles-Atherton Model for Least Square Identification using Sensitivity Function Normalization](https://www.lias-lab.fr/~eriketien/Files/Other/An%20Improved%20Jiles-Atherton%20Model%20for%20Least%20Square.pdf)).
+- How to successfully export and integrate a VST to a DAW.
+- How to create a UI for VST.
+- How to write a user manual for a VST.
+
+## Notes
+- The process of making discretized Jiles-Atherton may prove difficult.
+ 
+export default ({children}) => {
+  return (
+    <div className="flex justify-center">
+      <div className="prose-invert prose-a:underline prose-a:text-sky-500 lg:prose-base w-1/2 bg-neutral-800 px-24 py-16 prose-headings:font-bold prose-ul:list-disc prose-ol:list-decimal shadow-[0px_20px_207px_10px_rgba(32,_91,_251,_0.2)] border-x-[6px] border-blue-950">
+        {children}
+      </div>
+    </div>
+  )
+}

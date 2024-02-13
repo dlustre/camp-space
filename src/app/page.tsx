@@ -29,6 +29,13 @@ export default function Home() {
       description: 'A sequencer built by using phasor -> subdiv to play notes on a table. The probability of each note in the sequence can be set.',
       link: 'https://drive.google.com/drive/u/1/folders/1LYN9vCU2TH9s0uTVJXsuvO2IK0KprJfA',
       image: generatePath('/hw4.png'),
+      targetBlank: true,
+    },
+    {
+      title: 'Project Proposal',
+      description: 'Proposal for a Tape Saturator VST plugin.',
+      link: '/proposal',
+      image: generatePath('/proposal.png'),
       targetBlank: false,
     }
   ]
