@@ -1,0 +1,28 @@
+# Progress Report 3/5/24
+
+## Team Members: Keisun Luc, Ziyang Cheng, Dennis Lustre
+
+Desired Audio Technology Feature: Distortion Plugin
+
+## What we’re doing:
+After exploring our options for creating a VST, we decided it would be best to use the JUCE framework to implement our plugin. Most of the group had prior experience with C++, making it a better choice than Rust’s nih_plug framework, which proved to be difficult to use without any prior experience with it. Since we already have some processing logic programmed in Max, we just need to transfer it over and integrate it with JUCE.
+## How we’re doing it:
+### JUCE, a C++ framework
+- Widely used framework for audio application and plug-in development
+### Visual Studio Code, GitHub
+- Allows us to work remotely and stay up to date with code updates
+## What we’ve accomplished: 
+- Created low and high pass filter by using Biquad project, allowing to select a certain frequency range to saturate/distort.
+![Filter Patch](/filter-patch.png)
+
+- Created a GitHub repository for storing our code
+	
+## What remains to accomplish:
+- Migrate filter logic to JUCE
+- Create distortion logic in JUCE
+- User interface for the VST with JUCE
+- Combining filters to the distortion.
+- Compare our product to other distortion plugins (Fruity Blood Overdrive)
+
+## Notes
+Most of our project time has been spent trying to work with Rust's nih_plug and Max's jsui object, both of which we decided not to move forward with. Despite being a little behind, we should be able to get our VST accomplished now that we've settled on how to do so.

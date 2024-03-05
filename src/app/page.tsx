@@ -37,6 +37,13 @@ export default function Home() {
       link: generatePath('/proposal'),
       image: generatePath('/proposal.png'),
       targetBlank: false,
+    },
+    {
+      title: 'Progress Report',
+      description: 'Progress report for the final project.',
+      link: generatePath('/progress-report'),
+      image: generatePath('/filter-patch.png'),
+      targetBlank: false,
     }
   ]
 
